@@ -7,9 +7,7 @@
         <artifactId>hippo4j-example</artifactId>
         <version>${revision}</version>
     </parent>
-
     <artifactId>hippo4j-spring-boot-starter-example</artifactId>
-    <name>${project.artifactId}</name>
 
     <properties>
         <maven.deploy.skip>true</maven.deploy.skip>
@@ -26,6 +24,16 @@
             <groupId>cn.hippo4j</groupId>
             <artifactId>hippo4j-spring-boot-starter</artifactId>
             <version>${revision}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
 
         <dependency>
